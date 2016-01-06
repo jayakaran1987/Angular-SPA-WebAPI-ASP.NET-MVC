@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Web", "Mortgage.Web\Mortgage.Web.csproj", "{202C05F3-55DB-4414-97F9-D5B5907ADA6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Service", "Mortgage.Service\Mortgage.Service.csproj", "{00CCDC1F-224F-4CD1-B879-F3E5F1C0BC07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Test", "Mortgage.Test\Mortgage.Test.csproj", "{0EC3E431-C595-46AB-A132-573E2660DFF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{202C05F3-55DB-4414-97F9-D5B5907ADA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202C05F3-55DB-4414-97F9-D5B5907ADA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202C05F3-55DB-4414-97F9-D5B5907ADA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202C05F3-55DB-4414-97F9-D5B5907ADA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CCDC1F-224F-4CD1-B879-F3E5F1C0BC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CCDC1F-224F-4CD1-B879-F3E5F1C0BC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CCDC1F-224F-4CD1-B879-F3E5F1C0BC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CCDC1F-224F-4CD1-B879-F3E5F1C0BC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC3E431-C595-46AB-A132-573E2660DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC3E431-C595-46AB-A132-573E2660DFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC3E431-C595-46AB-A132-573E2660DFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC3E431-C595-46AB-A132-573E2660DFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,63 @@
+﻿<div class="container">
+    <h2> Mortgage Repayment Calculator </h2>
+    <form name="repaymantCalculator" style="width:600px;">
+        <div class="form-group">
+            <label style="margin-top:3px" for="cid" class="col-sm-4">Loan Amount:</label>
+            <div class="col-sm-5">
+                <input type="number" class="form-control" id="cid" placeholder="Loan Amount  ( > 0)" data-ng-model="repaymant.LoanAmount" min="1" required />
+            </div>
+        </div>
+        <div class="form-group" >
+            <label for="cname" style="margin-top:5px" class="col-sm-4 control-label">Annual Interest Rate :</label>
+            <div class="col-sm-5" style="margin-top:5px">
+                <input type="number" class="form-control" id="cname" placeholder="Annual Interest Rate ( > 0)" data-ng-model="repaymant.AnnualInterestRate" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" min="0.01" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cid" style="margin-top:5px" class="col-sm-4">Term of Mortgage:</label>
+            <div style="margin-top:5px;float: left;width: 120px;margin-left: 15px;">
+                <input type="number" class="form-control" id="cid" placeholder="Years(>= 0)" data-ng-model="repaymant.TermYears" min="0" required />
+            </div>
+            <label style="margin-top: 10px;float: left;margin-left: 3px;">years</label>
+            <div style="margin-top:5px;float: left;margin-left: 10px;width: 130px;">
+                <input type="number" class="form-control" id="cid" placeholder="Months(0-11) " data-ng-model="repaymant.TermMonths" min="0" max="11" required />
+            </div>
+            <label style="margin-top: 10px;float: left;margin-left: 3px;">months</label>
+        </div>
+        
+        <div class="form-group">
+            <div style="margin-top:25px; margin-left:200px" class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Calculate Now" data-ng-click="calculate()" data-ng-disabled="!repaymantCalculator.$valid" class="btn btn-primary" />
+                <a style="margin:15px" href="#/home"> Back</a>
+            </div>
+        </div>
+       
+
+        <div class="form-group" data-ng-show="resultMode">
+            <label for="cid" class="col-sm-4" style="margin-top:10px">Monthly Repaymant:</label>
+            <div class="col-sm-5" style="margin-top:5px">
+                <input type="number" class="form-control" readonly id="cid" value="{{MonthlyRepaymant}}" />
+            </div>
+        </div>
+        <div class="form-group" data-ng-show="resultMode">
+            <label for="cid" class="col-sm-4" style="margin-top:5px">Total to be Pay Back:</label>
+            <div class="col-sm-5" style="margin-top:5px">
+                <input type="number" class="form-control" readonly id="cid" value="{{TotalToBePaid}}" />
+            </div>
+        </div>
+
+        <div class="form-group" data-ng-show="errorMode">
+            <div class="col-sm-11" style="margin-top:10px">
+                {{error}}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-10" style="margin-top:10px">
+                (Note : Calculate Now button is only enbled when all of the fields are valid)
+            </div>
+        </div>
+
+
+    </form>
+</div>
