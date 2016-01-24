@@ -19,7 +19,6 @@ namespace Mortgage.Web.APIControllers
         RepaymantController()
         {
             // Replace this with IoC 
-            // Due to the limited time I did not use Dependency Injection
             // Can Use TinyIoc, Unity, Ninject, Autofac etc
             paymentService = new RepaymentService();
         }
@@ -31,7 +30,6 @@ namespace Mortgage.Web.APIControllers
             try
             {
                 // We can use Automapper to Map View Model to Model
-                // Due to the limited time I did not use AutoMapper
                 var paymant = new Repayment() { LoanAmount = model.LoanAmount, AnnualInterestRate = model.AnnualInterestRate, TermYears = model.TermYears, TermMonths = model.TermMonths };
 
                 model.MonthlyRepaymant = paymentService.MonthlyPaymentAmount(paymant);

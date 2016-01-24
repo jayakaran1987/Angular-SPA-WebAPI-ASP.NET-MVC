@@ -1,7 +1,14 @@
-Question
+#Single Page Application (SPA) with ASP.NET Web API and Angular.js (Partial Views)
 
-The Application
-Create a single page web application that will perform a simple mortgage repayment calculation.
+This single page web application that will perform a simple mortgage repayment calculation. The Application uses the following technologies
+
+ 1. AngularJS for the front end, making use of partials and AJAX calls.
+ 2. Server side should use ASP.Net MVC and Web Api
+ 3. The calculations on server side and returned to the front end.
+ 4. AJAX must be used to call the server
+ 5. Making use of the normal MVC layers
+
+
 On loading the page in a browser it should only display 4 fields and a button (a bonus would be to have these fields contained in an AngularJS partial). The fields will accept entry of a loan amount, the term of the mortgage in years and months and the annual interest rate.
 Client side validation:
 Entry of all fields is mandatory
@@ -12,16 +19,8 @@ Loan term years must be >= 0
  
 On clicking a button below the form the page should then display a new section at the bottom (of the same page) with fields containing the monthly repayment and the total amount that would be paid over the lifetime of the mortgage, both shown to 2 decimal places.
  
-Notes
-The application should use the following technologies:
-AngularJS for the front end, making use of partials and AJAX calls.
-Server side should use ASP.Net MVC and Web Api
-The repayment and total amount to be paid should be calculated on the server and returned to the page.
-The page should not refresh, AJAX must be used to call the server.
-The repayment calculation should use the simplest formula which is identical to the PMT function available in Microsoft Excel
-The purpose of this test is to see that the candidate is familiar with the above technologies so proper architecture is required, making use of the normal MVC layers (given that we are using AngularJS for the view and AJAX from the client).
  
-Acceptance criteria
+Acceptance Testing criteria
 1) Given the following inputs:
 Loan amount = 145000
 Annual Interest rate = 4.5 (note this is the annual interest rate and we require a monthly repayment figure)
@@ -45,11 +44,5 @@ Term years = 0
 Term months = 0
 This should cause an error to occur in the calculation which must be trapped and displayed to the user in a friendly manner
 
-Note -
-
-To make this application simple, I did not use the Dependency Injection libraries but I clearly mentioned in the code where we need to use IOC.
-I have created the Unit Test to ensure the calculation service deliver the correct results based on the acceptance criteria.
-Due to the limited time I did not cover Unit Test coverage for API Controller.
-I have created a custom exception handling in the event of an error scenario as mentioned in the question.
 
 

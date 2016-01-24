@@ -93,7 +93,6 @@ namespace Mortgage.Test
 
 
         // We can write more function test cases to ensure the service and api controller works as expected
-        // Since having a limited time I have tested the main logic
-        // These test cases are given in question
+        // I have tested the main logic
     }
 }
